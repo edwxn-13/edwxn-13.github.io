@@ -3,18 +3,24 @@ body {
     background-color: white;
     background-image: url("https://ibb.co/G70PkGY");
     font-size: medium;
+    text-decoration: none;
+
   }
 
 h2 {
     font-size: large;
     text-align: center;
     text-justify: inter-word;
+    text-decoration: none;
+
 }
 
 h3 {
     font-size: large;
     text-align: center;
     text-justify: inter-word;
+    text-decoration: none;
+
 }
 
 
@@ -27,5 +33,6 @@ p {
     background-color: white;
     background-image: url("https://ibb.co/G70PkGY");
     font-size: medium;
-}
+    text-decoration: none;
 
+}
