@@ -1,7 +1,6 @@
 body { 
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    background-image: url("https://ibb.co/G70PkGY");
     font-size: medium;
     text-decoration: none;
 
@@ -36,3 +35,9 @@ p {
     text-decoration: none;
 
 }
+
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
