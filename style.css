@@ -23,9 +23,24 @@
      
   }
 
+  .imgView
+  {
+    margin-left: 33%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-color: rgb(0, 0, 0);
+    
+  }
+
+  .imgRow
+  {
+    padding: 10px 10px 10px 10px;
+
+  }
+
 
 .sidenav h2{
-    padding: 40px 8px 6px 16px;
+    
     text-decoration: none;
     color: black;
     display: block;
@@ -38,7 +53,7 @@
 
   .post a
   {
-    padding: 80px 8px 6px 33%;
+    padding: 5px 8px 6px 33%;
     text-align:center;
     font-size: medium;
   }
@@ -46,27 +61,36 @@
 
   .post h1
   {
-    padding: 40px 8px 6px 33%;
+    padding: 5px 8px 6px 33%;
     text-align:center;
     font-size: medium;
   }
 
   .post
   {
+    margin-left: 0%;
+    padding: 100px 5px 5x 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
     border-style: dotted;
     border-color: rgb(134, 255, 255);
+    text-wrap:wrap;
+    
   }
 
 
   .body iframe
 {
-  padding: 0px 1px 10px 33%;
+  padding: 0px 1px 10px 0px;
 
 }
 
 
 
 body { 
+    margin-left: 33%;
+
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     font-size: medium;
@@ -81,7 +105,7 @@ h2 {
     text-decoration: none;
 
 }
-
+ 
 h3 {
     font-size: large;
     text-align: center;
