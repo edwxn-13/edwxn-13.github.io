@@ -35,6 +35,22 @@
 
   }
 
+  .post a
+  {
+    padding: 40px 8px 6px 16px;
+    text-align:center;
+    font-size: large;
+  }
+
+
+  .post b
+  {
+    padding: 40px 8px 6px 16px;
+    text-align:center;
+    font-size: medium;
+  }
+
+
   .body iframe
 {
   padding: 0px 1px 10px 33%;
