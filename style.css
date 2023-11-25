@@ -24,7 +24,7 @@
   }
 
 
-.sidenav b{
+.sidenav h2{
     padding: 40px 8px 6px 16px;
     text-decoration: none;
     color: black;
@@ -43,7 +43,7 @@
   }
 
 
-  .post zz
+  .post h1
   {
     padding: 40px 8px 6px 33%;
     text-align:center;
