@@ -37,7 +37,7 @@
 
   .post a
   {
-    padding: 40px 8px 6px 16px;
+    padding: 80px 8px 6px 33%;
     text-align:center;
     font-size: large;
   }
@@ -45,7 +45,7 @@
 
   .post b
   {
-    padding: 40px 8px 6px 16px;
+    padding: 40px 8px 6px 33%;
     text-align:center;
     font-size: medium;
   }
