@@ -8,10 +8,21 @@
     left: 0;
     overflow-x: hidden;
     padding-top: 40px;
-    background-image: url('assets/clockwise.png');
+    background-color: white;
 
 }
 
+.grid-container
+{
+  background-color: white;
+}
+
+img
+{
+  padding: 0 1px;
+  float: right;
+  width: 100%;
+}
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -52,7 +63,6 @@
     font-size: xx-large;
     font-weight: bold;
     text-align: left;
-
   }
 
   .post a
