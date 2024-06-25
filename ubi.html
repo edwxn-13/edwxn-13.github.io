@@ -1,0 +1,153 @@
+
+<html lang="en">
+    <style>
+        @font-face {
+            font-family: swiss751;
+            src: url(assets/ubi/font/Swiss\ 721\ Regular.otf);
+        }
+
+        a:link { text-decoration: none; }
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:active { text-decoration: none; }
+        
+        body
+        {
+            background-image: url("assets/ubi/background.png");
+            background-size: 50%;
+            background-repeat: repeat;
+            background-position: top left;
+            animation: mymove 20s infinite;
+            animation-direction: alternate;
+        }
+
+        .sidebar img
+        {
+            width: 100%;
+            padding-bottom: 40%;
+        }
+
+        .homescreen
+        {
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 0;
+
+            -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+
+            background-image: radial-gradient(white 33%, transparent 33%);
+	        background-size: 5px 5px;
+            background-repeat: round;
+            padding: 0; 
+            margin: 0;
+
+
+        }
+        .sidebar
+        { 
+            height: 100%;
+            width: 13%;
+            position: fixed;
+            z-index: 9;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+
+            padding-top: 0px;
+            padding: 0; 
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .content
+        {
+            width: 87%;
+            padding-left: 13%;
+            color: black;
+            font-family: swiss751;
+            z-index: 0;
+            overflow: hidden;
+
+        }
+
+        .content a
+        {
+
+            text-decoration: none;
+            color :black;
+
+        }
+
+        .content h1
+        {
+            text-decoration: none;
+
+            line-height: 2px;
+            font-size:70px;
+            margin-right: 30px;
+
+            text-align: right;
+            letter-spacing: -4.0px;
+        }
+
+        .content body
+        {
+            text-decoration: none;
+
+           justify-content: right;
+           text-align: right;
+        }
+
+        @keyframes mymove {
+            0% 
+            {
+                background-size: 100%;;
+                background-position: center;
+            }
+            100% 
+            {
+                background-size: 300%;
+            }
+        }
+    </style>
+
+    <div class = "homescreen">
+        <div class= "content">
+
+            <body>
+                <br>
+
+                <a>
+                    <h1>
+                        <b> ->_+</b> 
+                    </h1>
+                </a>
+                <br>
+                <a href="https://soundcloud.com/ubiifuruuu/memos/s-n3l3Ef1tSFn?si=c5b387e2b35c45c9a1a040c7ef1739b0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+                    <h1>
+                        <b>new one</b> 
+                    </h1>
+                </a>
+                <br>
+                <a href="eyesoundz.html">
+                    <h1>
+                        <b>media</b> 
+                    </h1>
+                </a>
+                <br>
+                <a href="index.html">
+                    <h1>
+                        <b>exxtralife</b> 
+                    </h1>
+                </a>
+            </body>
+
+        </div>
+    </div>
+
+    <div class = "sidebar">
+        <img src = "assets/ubi/sidebar.png">
+    </div>
+
+</html>
