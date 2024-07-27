@@ -63,6 +63,32 @@
             background-color: #f5f5f5;
         }
 
+        .topBar
+        {
+            text-align: left;
+        }
+        .topBar h1
+        {
+            color : black;
+            font-size:124px;
+            letter-spacing: -4.4px;
+
+        }
+
+
+        .topBar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .topBar li {
+            display: inline;
+            float: left;
+            background-color: white;
+            padding-right: 50px;
+        }
+
         .content
         {
             width: 87%;
@@ -71,15 +97,12 @@
             font-family: swiss751;
             z-index: 0;
             overflow: hidden;
-
         }
 
         .content a
         {
-
             text-decoration: none;
             color :black;
-
         }
 
         .content h1
@@ -87,11 +110,9 @@
             text-decoration: none;
 
             line-height: 2px;
-            font-size:70px;
             margin-right: 30px;
+            letter-spacing: -4.4px;
 
-            text-align: right;
-            letter-spacing: -5.8px;
         }
 
         .content body
@@ -118,34 +139,54 @@
     <div class = "homescreen">
         <div class= "content">
 
-            <body>
-                <br>
+            <div class = "topBar">
+                <ul>
 
-                <a>
-                    <h1>
-                        <b> ->_+</b> 
-                    </h1>
-                </a>
-                <br>
-                <a href= "">
-                    <h1>
-                        <b>new one</b> 
-                    </h1>
-                </a>
-                <br>
-                <a href="eyesoundz.html">
-                    <h1>
-                        <b>media</b> 
-                    </h1>
-                </a>
-                <br>
-                <a href="index.html">
-                    <h1>
-                        <b>exxtralife</b> 
-                    </h1>
-                </a>
-            </body>
+                <li><h1>>_+</h1></li>
 
+                <li><h1><span id="currentTime"></span></h1></li>
+
+                <li><a href = "https://soundcloud.com/ubiifuruuu/memos" ><h1>releases</h1></a></li>
+
+                <li><a href = "updates.html"><h1>updates</h1></a></li>
+
+                <li><a href = "https://github.com/edwxn-13"><h1>github</h1></a></li>
+
+                <li><a href = "ubi.html"><h1>graphic</h1></a></li>
+
+                <li><a href = "exxtra.html"><h1>bonus</h1></a></li>
+
+                <li><a href = "index.html"><h1>exxtralife</h1></a></li>
+
+                <li><a href = "ubi.html"><h1>sites</h1></a></li>
+
+                <li><a href = "ubi.html"><h1>webart</h1></a></li>
+
+                <li><h1><span id="resolution"></span></h1></li>
+                <script>
+                    function getTheTime() 
+                    {
+                        const now = new Date();
+                        const currentDateTime = now.toLocaleTimeString();
+                        document.querySelector('#currentTime').textContent = currentDateTime;
+                    }
+
+                    function getWindowSize()
+                    {
+                        var w = window.innerWidth;
+                        var h = window.innerHeight;
+                        var sizeString = w.toString() + "x" + h.toString();
+                        document.querySelector('#resolution').textContent = sizeString;
+                    }
+                    
+                    setInterval(getTheTime, 1000);
+                    setInterval(getWindowSize, 50);
+
+                </script>
+                </ul>
+
+            </div>
+            
         </div>
     </div>
 
