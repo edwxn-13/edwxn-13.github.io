@@ -4,9 +4,9 @@
         <title>graphics</title>
       </head>
     <style>
-        @font-face {
+       @font-face {
             font-family: swiss751;
-            src: url(assets/ubi/font/swissMeidum.otf);
+            src: url(assets/ubi/font/Swiss\ 721\ Regular.otf);
         }
 
         a:link { text-decoration: none; }
@@ -16,18 +16,8 @@
         
         body
         {
-            background-image: url("designPort/ex7.png");
-            background-size: 50%;
-            background-repeat: repeat;
-            background-position: top left;
-            animation: mymove 20s infinite;
-            animation-direction: alternate;
-        }
-
-        .sidebar img
-        {
-            width: 100%;
-            padding-bottom: 40%;
+     
+            background-color: white;
         }
 
         .homescreen
@@ -36,43 +26,23 @@
             min-height: 100%;
             z-index: 0;
 
-            -webkit-backdrop-filter: blur(40px);
-            backdrop-filter: blur(40px);
-
-            background-image: radial-gradient(white 33%, transparent 33%);
-	        background-size: 5px 5px;
+	        background-size: 6px 6px;
             background-repeat: round;
             padding: 0; 
             margin: 0;
 
 
         }
-        .sidebar
-        { 
-            height: 100%;
-            width: 13%;
-            position: fixed;
-            z-index: 9;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-
-            padding-top: 0px;
-            padding: 0; 
-            margin: 0;
-            background-color: #f5f5f5;
-        }
 
         .topBar
         {
             text-align: left;
-            padding-bottom: 20px;
         }
         .topBar h1
         {
             color : black;
-            font-size:124px;
-            letter-spacing: -9.4px;
+            font-size: 29px;
+            letter-spacing: -1.4px;
             display: block;
         }
 
@@ -85,10 +55,11 @@
 
         .topBar li {
             display: inline;
-            
             float: left;
             background-color: white;
-            padding-right: 50px;
+            padding-right: 10px;
+            padding-left: 10px;
+
             
         }
 
@@ -105,7 +76,6 @@
         .content
         {
             width: 87%;
-            padding-left: 13%;
             color: black;
             font-family: swiss751;
             z-index: 0;
@@ -120,45 +90,36 @@
 
         .content h1
         {
+            font-weight: normal;
             text-decoration: none;
-
             line-height: 2px;
-            margin-right: 30px;
-            letter-spacing: -4.4px;
-
+            margin-right: 1px;
+            letter-spacing: -4%;
         }
 
         .content body
         {
             text-decoration: none;
-
            justify-content: right;
            text-align: right;
         }
 
-        .row 
+        .grid
         {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 4px;
-            justify-content: left;
-            padding-left: 13%;
+            display:grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            align-items:stretch;
         }
-        .column 
+        
+        .grid img
         {
-            flex: 25%;
-            min-width: 40%;
-            padding: 0 4px;
-        }
+            border: 1px solid #ccc;
+            object-fit: cover;
+            max-width: 100%;
+            aspect-ratio: 1/1;
 
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-            background-color: white;
-            
         }
-
         @keyframes mymove {
             0% 
             {
@@ -178,13 +139,13 @@
             <div class = "topBar">
                 <ul>
 
-                <li><a href = "ubi.html"><h1>->_+</h1></a></li>
+                <li><a href = "index.html"><h1>edwin nwosu</h1></a></li>
 
                 <li><h1><span id="currentTime"></span></h1></li>
 
                 <li><h1><span id="resolution"></span></h1></li>
 
-                <li><a href = "graphics.html"><h1>graphicssssss.....^_*&</h1></a></li>
+                <li><a href = "graphics.html"><h1>graphics</h1></a></li>
 
                 <script>
                     function getTheTime() 
@@ -209,42 +170,27 @@
                 </ul>
 
             </div>
-
-
         </div>
-
-        <div class="row">
-            <div class="column">
-              <img src="designPort/ex1.png">
-              <img src="designPort/ex2.png">
-              <img src="designPort/ex3.png">
-            </div>
-            
-            <div class="column">
-                <img src="designPort/ex4.png">
-                <img src="designPort/ex5.png">
-                <img src="designPort/ex6.png">
-            </div>
-
-            <div class="column">
-                <img src="designPort/ex7.png">
-                <img src="designPort/ex8.png">
-                <img src="designPort/ex9.png">
-            </div>
-
-            <div class="column">
-                <img src="designPort/ex10.png">
-                <img src="designPort/ex11.png">
-                <img src="designPort/ex12.png">
-                <img src="designPort/ex13.png">
-
-            </div>
-           
-          </div>
+        <main class="grid">
+            <img src="designPort/ex18.png" alt="Sample photo">
+            <img src="designPort/ex19.png" alt="Sample photo">
+            <img src="designPort/ex20.png" alt="Sample photo">
+            <img src="designPort/ex21.png" alt="Sample photo">
+            <img src="designPort/ex22.png" alt="Sample photo">
+            <img src="designPort/ex23.png" alt="Sample photo">
+            <img src="designPort/ex4.png" alt="Sample photo">
+            <img src="designPort/ex5.png" alt="Sample photo">
+            <img src="designPort/ex7.png" alt="Sample photo">
+            <img src="designPort/ex8.png" alt="Sample photo">
+            <img src="designPort/ex10.png" alt="Sample photo">
+            <img src="designPort/ex11.png" alt="Sample photo">
+            <img src="designPort/ex17.png" alt="Sample photo">
+            <img src="designPort/ex1.png" alt="Sample photo">
+            <img src="designPort/ex24.png" alt="Sample photo">
+          </main>
+        
     </div>
 
-    <div class = "sidebar">
-        <img src = "assets/ubi/sidebar.png">
-    </div>
+  
 
 </html>

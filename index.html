@@ -1,25 +1,205 @@
+<!--all of this in the hopes i release something soon perhaps maybe + from the river to the sea-->
 <html lang="en">
     <head>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            .imgbox {
-                display: grid;
-                height: 100%;
-            }
-            .center-fit {
-                width: 100%;
-                height: auto;
-                margin: auto;
-            }
-        </style>
-    </head>
-    <body>
-    <div class="imgbox" >
-        <a href="exxtra.html">
-            <img class="center-fit" src="designPort/ex17.png">
-        </a>
+        <title>ubiifuruuu dot net</title>
+      </head>
+    <style>
+        @font-face {
+            font-family: swiss751;
+            src: url(assets/ubi/font/Swiss\ 721\ Regular.otf);
+        }
+
+        a:link { text-decoration: none; }
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:active { text-decoration: none; }
+        
+        body
+        {
+     
+            background-image: url("assets/scaffolding-rgb.png");
+            background-size: cover;
+            background-position: center top;
+        }
+
+        .sidebar img
+        {
+            width: 100%;
+            padding-bottom: 40%;
+        }
+
+        .homescreen
+        {
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 0;
+
+            background-image: radial-gradient(white 33%, transparent 44%);
+	        background-size: 3px 3px;
+            background-repeat: round;
+            padding: 0; 
+            margin: 0;
+
+
+        }
+
+        .topBar
+        {
+            text-align: left;
+        }
+        .topBar h1
+        {
+            color : black;
+            font-size: 29px;
+            letter-spacing: -1.4px;
+            display: block;
+        }
+
+
+        .topBar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .topBar li {
+            display: inline;
+            float: left;
+            background-color: white;
+            padding-right: 10px;
+            padding-left: 10px;
+
+            
+        }
+
+        .topBar li:hover
+        {
+            background-color: black;
+        }
+
+        .topBar h1:hover
+        {
+            color : white;
+        }
+
+        .content
+        {
+            width: 100%;
+            color: black;
+            font-family: swiss751;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .content a
+        {
+            text-decoration: none;
+            color :black;
+        }
+
+        .content h1
+        {
+            font-weight: normal;
+            text-decoration: none;
+            line-height: 2px;
+            margin-right: 1px;
+            letter-spacing: -4%;
+        }
+
+        .content body
+        {
+            text-decoration: none;
+
+           justify-content: right;
+           text-align: right;
+        }
+        .page
+        {
+            text-align: right;            
+        }
+
+        .page h2
+        {
+            font-weight: normal;
+            text-decoration: none;
+            line-height: 2px;
+            margin-right: 1px;
+            letter-spacing: -4%;
+        }
+
+        .page img
+        {
+            height: auto;
+            max-width: 50%;
+        }
+
+        .button 
+        {
+            background-color: white;
+            display: inline-block;
+            
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .post
+        {
+            padding-top: 20px;
+        }
+    </style>
+
+    <div class = "homescreen">
+        <div class= "content">
+
+            <div class = "topBar">
+                <ul>
+
+                <li><h1>edwin nwosu</h1></li>
+
+                <li><h1><span id="currentTime"></span></h1></li>
+
+                <li><a href = "https://soundcloud.com/ubiifuruuu/sets/spring-songs" ><h1>releases</h1></a></li>
+
+                <li><a href = "index.html"><h1>updates</h1></a></li>
+
+                <li><a href = "https://github.com/edwxn-13"><h1>github</h1></a></li>
+
+                <li><a href = "graphics.html"><h1>graphic</h1></a></li>
+
+                <li><a href = "exxtra.html"><h1>bonus</h1></a></li>
+
+                <li><a href = "exxtralife/exxtralife.html"><h1>exxtralife</h1></a></li>
+
+                <li><a href = "index.html"><h1>sites</h1></a></li>
+
+                <li><a href = "index.html"><h1>webart</h1></a></li>
+
+                <li><h1><span id="resolution"></span></h1></li>
+                <script>
+                    function getTheTime() 
+                    {
+                        const now = new Date();
+                        const currentDateTime = now.toLocaleTimeString();
+                        document.querySelector('#currentTime').textContent = currentDateTime;
+                    }
+
+                    function getWindowSize()
+                    {
+                        var w = window.innerWidth;
+                        var h = window.innerHeight;
+                        var sizeString = w.toString() + "x" + h.toString();
+                        document.querySelector('#resolution').textContent = sizeString;
+                    }
+                    
+                    setInterval(getTheTime, 1000);
+                    setInterval(getWindowSize, 50);
+
+                </script>
+                </ul>
+
+            </div>
+            
+        </div>
     </div>
 
+</html>
