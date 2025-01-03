@@ -13,7 +13,8 @@ button
     width: 90%;
     justify-self: center;
    
-    border-radius: 50px;
+    border-radius: 20px;
+    background-color: white;
 
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -21,7 +22,14 @@ button
     padding-left: 50px;
     padding-top: 50px;
     margin-top: 60px;
-    outline: #3c3c3c solid 1px;
-    outline-offset: -20px;
-    color: black;
+}
+
+.pager
+{
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+
 }
