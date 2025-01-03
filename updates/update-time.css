@@ -1,0 +1,27 @@
+
+button
+{
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-width: 0px;
+    outline-width: 0px;
+}
+.panel
+{
+    height: 300px;
+    width: 90%;
+    justify-self: center;
+   
+    border-radius: 50px;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 60px;
+    outline: #3c3c3c solid 1px;
+    outline-offset: -20px;
+    color: black;
+}
