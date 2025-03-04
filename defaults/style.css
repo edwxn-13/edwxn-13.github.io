@@ -1,0 +1,23 @@
+@font-face {
+    font-family: avant;
+    src: url(assets/fonts/avant.ttf);
+}
+
+@font-face {
+    font-family: europa;
+    src: url(assets/fonts/europa.otf);
+}
+
+.page
+{
+    
+}
+
+.page h1
+{
+    color: black;
+    font-family: europa;
+    font-size: 50px;
+    letter-spacing: -1.4px;
+    display: block;
+}

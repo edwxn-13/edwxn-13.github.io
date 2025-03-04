@@ -2,12 +2,26 @@
 <html lang="en">
     <head>
         <title>graphics</title>
+        <link rel="stylesheet" href="defaults/style.css">
+
       </head>
     <style>
        @font-face {
             font-family: swiss751;
             src: url(assets/ubi/font/Swiss\ 721\ Regular.otf);
         }
+
+        @font-face {
+            font-family: avant;
+            src: url(assets/fonts/avant.ttf);
+        }
+
+        @font-face {
+            font-family: europa;
+            src: url(assets/fonts/europa.otf);
+        }
+
+
 
         a:link { text-decoration: none; }
         a:visited { text-decoration: none; }
@@ -16,7 +30,7 @@
         
         body
         {
-     
+            margin: 0 0 0 0;
             background-color: white;
         }
 
@@ -37,6 +51,9 @@
         .topBar
         {
             text-align: left;
+            position: fixed;
+            padding-top: 0px;
+            margin-top: 0px;
         }
         .topBar h1
         {
@@ -44,6 +61,7 @@
             font-size: 29px;
             letter-spacing: -1.4px;
             display: block;
+            
         }
 
 
@@ -119,6 +137,35 @@
             aspect-ratio: 1/1;
 
         }
+
+        .landscape-grid
+        {
+            display:grid;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+            grid-gap: 20px;
+            align-items:stretch;
+        }
+
+        .landscape-grid img
+        {
+            object-fit: cover;
+            max-width: 100%;
+            aspect-ratio: 16/10;
+
+        }
+
+        .media-container video
+        {
+            object-fit: cover;
+
+        }
+
+
+        .section
+        {
+            display: grid;
+        }
+
         @keyframes mymove {
             0% 
             {
@@ -170,22 +217,59 @@
 
             </div>
         </div>
-        <main class="grid">
-            
-            <img src="designPort/ex18.png" alt="Sample photo">
-            <img src="designPort/ex19.png" alt="Sample photo">
-            <img src="designPort/ex20.png" alt="Sample photo">
-            <img src="designPort/ex22.png" alt="Sample photo">
-            <img src="designPort/ex5.png" alt="Sample photo">
-            <img src="designPort/ex7.png" alt="Sample photo">
-            <img src="designPort/ex10.png" alt="Sample photo">
-            <img src="designPort/ex11.png" alt="Sample photo">
-            <img src="designPort/ex17.png" alt="Sample photo">
-            <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/three/time.png" alt="Sample photo">
-            <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/three/exxtrainfo.png" alt="Sample photo">
-            <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/three/lineup.png" alt="Sample photo">
-          </main>
+
+
+        <div class = "page">
+
+            <div class = media-container>
+
+                <video width="100%" height="100%" id = "center-vid" autoplay loop playsinline>
+                    <source src="work/port/output.mp4" type = "video/mp4">
+                </video>
+
         
+            </div>
+
+            <div class = "title" style="display: flex; justify-content: center;"><h1>design work</h1></div>
+
+            <div class="grid">
+                <img src="designPort/ex18.png" alt="Sample photo">
+                <img src="designPort/ex19.png" alt="Sample photo">
+                <img src="designPort/ex20.png" alt="Sample photo">
+                <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/three/time.png" alt="Sample photo">
+                <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/three/exxtrainfo.png" alt="Sample photo">
+                <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/three/lineup.png" alt="Sample photo">
+            </div>
+
+            <div class = "section">
+                <div class = media-container>
+                    <img src="designPort/tickets/nlu.png" width="100%" alt="Sample photo">
+
+                    
+
+                </div>
+
+            </div>
+            
+            <div class = "title" style="display: flex; justify-content: center;"><h1> ascii </h1></div>
+
+            <div class = media-container>
+                <video width="100%" height="100%" id = "center-vid" autoplay muted loop playsinline>
+                    <source src="work/port/exxtralife/ascii.mp4" type = "video/mp4">
+                </video>
+            </div>
+
+            <div class = "title" style="display: flex; justify-content: center;"><h1>webdev</h1></div>
+
+            <div class="landscape-grid">
+                <img src="work/port/webdev/edenlogin.png" alt="Sample photo">
+                <img src="work/port/webdev/exxtralife_site1.png" alt="Sample photo">
+                <img src="work/port/webdev/exxtralife_splash.png" alt="Sample photo">
+                <img src="work/port/webdev/exxtralite.png" alt="Sample photo">
+
+            </div>
+
+        </div>
     </div>
 
   

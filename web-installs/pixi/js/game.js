@@ -67,7 +67,7 @@ var h = window.innerHeight;
 
 
 const app = new PIXI.Application();
-await app.init({ background: '#FF44bb', width: w * 0.989, height: h * 0.982});
+await app.init({ background: '#BBBBBB', width: w * 0.989, height: h * 0.982});
 
 document.getElementById("page").appendChild(app.canvas);
 var client = document.getElementById("page");
