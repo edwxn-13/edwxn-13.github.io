@@ -8,6 +8,13 @@
     src: url(assets/fonts/europa.otf);
 }
 
+body
+{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 .page
 {
     
@@ -20,4 +27,16 @@
     font-size: 50px;
     letter-spacing: -1.4px;
     display: block;
+}
+
+::selection
+{
+    color: gray;
+    background: transparent;
+}
+
+::-moz-selection
+{
+    color: gray;
+    background: transparent;
 }
