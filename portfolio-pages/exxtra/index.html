@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta name="theme-color" content="#EEEEEE">
+    <link rel="stylesheet" href="../../defaults/style.css">
+</head>
+
+<html>
+
+    <style>
+
+        .page
+        {
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .page img
+        {
+            width: 19.7%;
+        }
+
+    </style>
+
+    <div class = "homescreen">
+        <div class= "content" style="width: 100%;">
+
+            <div class = "topBar">
+                <ul>
+
+                <li><a href = "../../index.html"><h1>exxtralife</h1></a></li>
+
+                <li><h1><span id="currentTime"></span></h1></li>
+
+                <li><h1><span id="resolution"></span></h1></li>
+
+                <script>
+                    function getTheTime() 
+                    {
+                        const now = new Date();
+                        const currentDateTime = now.toLocaleTimeString();
+                        document.querySelector('#currentTime').textContent = currentDateTime;
+                    }
+
+                    function getWindowSize()
+                    {
+                        var w = window.innerWidth;
+                        var h = window.innerHeight;
+                        var sizeString = w.toString() + "x" + h.toString();
+                        document.querySelector('#resolution').textContent = sizeString;
+                    }
+                    
+                    setInterval(getTheTime, 1000);
+                    setInterval(getWindowSize, 50);
+
+                </script>
+                </ul>
+
+            </div>
+
+
+            <div class = "page">
+
+                <div class = "title" style="display: flex; justify-content: left;"><h1>exxtralife</h1></div>
+
+                A large amount of inspiration was derived from companies that specialise in process/service. 
+                Initial concepts of exxtralife as a brand stemmed from it being a subsidiary of an almost dystopian hyper-capitalist corporation, 
+                like a bank or a city state, with exxtralife being the entertainment sector. 
+                It was only natural to draw from public transportation and its process focused organisations. 
+                A public transportation system can almost be judged solely off of its iconography, its legibility. 
+                MTA in New York and the London Underground are perfect examples of this. 
+                <br><br> This leads us to the national rail symbol. A cultural institution with a symbol that is immediately recognisable. 
+                It is also a symbol of hyper-capitalism in its own way. With it only coming about after the privatisation of British rail networks during the late 90s, 
+                making it the perfect icon to absorb into the symbology of exxtralife.
+
+                <br><br>The tokenisation of the symbols in the exxtralife logo point to a pop art like reductionist view of pop culture, 
+                melding the iconography of video games, and organisations important for daily function together as one. 
+
+                This direction is what has been used to inform artistic and creative choices in regard to web design, posters and marketing decisions. 
+
+                <br><br>
+                <div class = "title" style="display: flex; justify-content: left;"><h1>evolution</h1></div>
+                <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/exxtralife1poster.PNG" alt="Sample photo">
+
+                <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/exxtralife2.png" alt="Sample photo">
+                <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/three/time.png" alt="Sample photo">
+                <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/three/exxtrainfo.png" alt="Sample photo">
+                <img src="https://exxtralife.github.io/Desktop/assets/poster-archive/three/lineup.png" alt="Sample photo">
+            </div>
+        </div>
+    </div>
+</html>
