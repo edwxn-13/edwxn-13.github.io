@@ -1,0 +1,50 @@
+.page
+{
+    font-family: swiss751;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 90px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-smooth: always;
+}
+
+.page h1 
+{
+    text-transform: uppercase;
+    letter-spacing: -8px;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+}
+
+.page .project-list
+{
+    display: block;
+}
+
+.page .list-item-title
+{
+    display: inline;
+    overflow:auto; 
+}
+
+.page .list-item-info
+{
+    padding-top: 12px;
+    padding-left: 9px;
+    font-size: 17px;
+    display: inline;
+    vertical-align: top;
+    word-wrap:break-word;
+    text-wrap-mode: wrap;
+}
+.page .list-item
+{
+    display: flex;
+    flex-wrap:nowrap;
+}
