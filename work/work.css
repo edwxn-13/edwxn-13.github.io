@@ -1,9 +1,8 @@
 .page
 {
     font-family: swiss751;
-    width: 100%;
+    min-width: 100%;
     padding-top: 20px;
-    padding-bottom: 90px;
     overflow-x: hidden;
     overflow-y: scroll;
     align-content: center;
@@ -15,8 +14,8 @@
 
 .page h1 
 {
-    text-transform: uppercase;
-    letter-spacing: -8px;
+    text-transform:uppercase;
+    letter-spacing: -5.5px;
     padding: 0px;
     margin: 0px;
     display: inline;
@@ -33,18 +32,88 @@
     overflow:auto; 
 }
 
-.page .list-item-info
+
+.page .list-item .tech
 {
-    padding-top: 12px;
-    padding-left: 9px;
-    font-size: 17px;
     display: inline;
-    vertical-align: top;
-    word-wrap:break-word;
-    text-wrap-mode: wrap;
+    text-align:justify;
+
+    color: rgb(185, 185, 185);
 }
-.page .list-item
+
+
+.page .list-item:hover
 {
-    display: flex;
-    flex-wrap:nowrap;
+    color: red;
+    animation: highlight 0.05s;
+}
+
+@media (orientation: landscape) {
+    .page .list-item
+    {
+        display: flex;
+        flex-wrap:nowrap;
+    }
+
+    .page .list-item-info
+    {
+        
+        padding-top: 12px;
+        padding-left: 9px;
+        font-size: 17px;
+        display: inline;
+        vertical-align: top;
+        word-wrap:break-word;
+        text-wrap-mode: wrap;
+        text-align:justify;
+        margin-right: 2vw;
+    }
+}
+
+@media (orientation: portrait) {
+    .page .list-item
+    {
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+
+    .page .list-item-info
+    {
+        padding-left: 9px;
+        font-size: 17px;
+        display: inline;
+        vertical-align: top;
+        word-wrap:break-word;
+        text-wrap-mode: wrap;
+        margin-right: 0px;
+        text-align:justify;
+
+    }
+
+    .page h1 
+    {
+        line-height: 55px;
+        text-wrap-mode: wrap;
+        text-wrap-style: stable;
+        word-wrap: break-word;
+    }
+}
+
+@keyframes highlight {
+    0% {
+        color: inherit;
+    }
+    100% {
+        color: none;
+    }
+}
+
+@keyframes unhighlight {
+    0% {
+        color: inherit;
+    }
+    100% {
+        color: none;
+    }
 }

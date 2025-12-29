@@ -1,0 +1,65 @@
+[
+    
+    {
+        "type":"ProjectData",
+        "project_name":"Sunset Engine",
+        "project_desc": "My own game engine created to meet the specific needs of the game I am currently developing. It is specialised for space exploration games, using a floating origin system to allow expansive game worlds. The engine uses an ECS structure to allow for a modular open oriented approach to game design. The engine is available on GitHub and currently supports procedural planet generation",
+        "project_tech":"C/C++/OpenGL/GL3W",
+        "link":"https://github.com/edwxn-13/SunsetEngine"
+    },
+
+    {
+        "type":"ProjectData",
+        "project_name":"Pocket Operator",
+        "project_desc": "Mobile application that procedurally generates music using location data and user movement/direction. Markov chains are used to generate lead melodies. All sounds generated in app or designed by myself. ",
+        "project_tech":"Swift/SwiftUI/AudioKit",
+        "link":"https://github.com/edwxn-13/PocketOperatorSwift"
+    },
+
+    {
+        "type":"ProjectData",
+        "project_name":"alten - A.R.I.A",
+        "project_desc": "Frontend development for a mixed reality application that allows users to interact with a chat bot to assist them with skilled tasks. The application also responds to user actions and offers feedback on how to complete the task successfully. My work involved designing a framework on top of ThreeJS and the BabylonJS engine to create modular mixed reality user interfaces.",
+        "project_tech":"Javascript/ThreeJS/BabylonJS"
+    },
+
+    {
+        "type":"ProjectData",
+        "project_name":"Space combat",
+        "project_desc": "A single player space combat game made inspired by Elite Dangerous/Star Citizen. All assets excluding skybox, including meshes,sound effects, UI elements and soundtrack belong to me.",
+        "project_tech":"C#/Unity/Blender/Photoshop/Logic Pro",
+        "link":"https://github.com/edwxn-13/Untitled-Space-Combat-Sim"
+    },
+
+    {
+        "type":"ProjectData",
+        "project_name":"exxtralife",
+        "project_desc": "My work with exxtralife mainly consists of creative front end web development, updating the website to coincide with new parties and events. Events are promoted using layered alternate reality game ideas that often involve capture the flag style activities. I currently creating a video editing tool which creates visual errors in footage in accordance with background music, combining the arts with my affinity for programming.",
+        "project_tech":"C++/JUCE/OpenGL/HLSL",
+        "link":"/work/exxtra/index.html"
+    },
+
+    {
+        "type":"ProjectData",
+        "project_name":"various web development",
+        "project_desc": "Web development for various clients - including: ALTEN, EXXTRALIFE, EDENPLUS, COLOR:INC and various local businesses",
+        "project_tech":"React/Js/ThreeJS/HTML/CSS + more"
+    },
+
+    {
+        "type":"ProjectData",
+        "project_name":"Pocket Visualiser",
+        "project_desc": "Visualiser component of Pocket Operator",
+        "project_tech":"Swift/SwiftUI/AudioKit",
+        "link":"https://github.com/edwxn-13/Visuals"
+    },
+
+    {
+        "type":"ProjectData",
+        "project_name":"hyperspace",
+        "project_desc": "Procedurally Generated, text-based space adventure !! (...) [my highschool project haha]",
+        "project_tech":"just C++",
+        "link":"https://github.com/edwxn-13/Hyperspace"
+    }
+
+]

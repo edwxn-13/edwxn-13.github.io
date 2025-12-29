@@ -35,12 +35,18 @@ h1
 
 a:link {
   text-decoration: none;
+  cursor: crosshair;
+
 }
 a:visited {
   text-decoration: none;
+  cursor: crosshair;
+
 }
 a:hover {
   text-decoration: none;
+  cursor: crosshair;
+
 }
 a:active {
   text-decoration: none;
@@ -51,6 +57,15 @@ body {
   background-color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: crosshair;
+  
+
+}
+
+::selection
+{
+  background-color: transparent;
+  color: gray;
 }
 
 .sidebar img {
@@ -60,11 +75,9 @@ body {
 
 .homescreen {
   min-width: 100%;
-
   z-index: 0;
-
   background-image: radial-gradient(white 33%, transparent 44%);
-  background-size: 3px 3px;
+  background-size: 2px 2px;
   background-repeat: round;
   padding: 0;
   margin: 0px, 0px, 0px, 0px;
@@ -98,11 +111,10 @@ body {
 
 .topBar li:hover {
   background-color: black;
-}
-
-.topBar h1:hover {
   color: white;
 }
+
+
 
 .content {
   width: 100%;
