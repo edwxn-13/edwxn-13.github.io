@@ -61,4 +61,3 @@ function add_list_item(project_data, project_list_element)
 
 
 project_page_init();
-console.log("brorooo")
