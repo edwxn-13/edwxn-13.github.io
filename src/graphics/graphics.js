@@ -74,4 +74,4 @@ function normalise_image_scale(vec)
     return new vec2((vec.x/mag), (vec.y/mag));
 }
 
-init_graphics_page();
+document.addEventListener("DOMContentLoaded", init_graphics_page);

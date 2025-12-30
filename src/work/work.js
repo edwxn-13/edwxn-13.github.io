@@ -59,5 +59,4 @@ function add_list_item(project_data, project_list_element)
     
 }
 
-
-project_page_init();
+document.addEventListener("DOMContentLoaded", project_page_init);
