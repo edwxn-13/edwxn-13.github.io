@@ -14,10 +14,12 @@
 
 .page h1 
 {
+    
     text-transform:uppercase;
     letter-spacing: -5.5px;
     padding: 0px;
     margin: 0px;
+    
     display: inline;
 }
 
@@ -80,7 +82,7 @@
 
     .page .list-item-info
     {
-        padding-left: 9px;
+        padding-left: 2px;
         font-size: 17px;
         display: inline;
         vertical-align: top;
