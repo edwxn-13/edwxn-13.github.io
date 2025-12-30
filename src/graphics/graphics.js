@@ -9,7 +9,7 @@ class vec2
 }
 function init_graphics_page()
 {
-    let IMAGE_COUNT = 47;
+    let IMAGE_COUNT = 51;
     var images = [];
     let prefix = "../../assets/port/gallery";
     for(var i = 0; i < IMAGE_COUNT; i++)
@@ -55,8 +55,8 @@ function create_image_element(image_path, grid)
         var image_adjusted_scale = normalise_image_scale(new vec2(width_index,height_index));
         console.log(image_path + "scale :");
         console.log(image_adjusted_scale);
-        var true_height =  Math.round(image_adjusted_scale.y * 100.0);
-        var true_width =  Math.round(image_adjusted_scale.x * 100.0);
+        var true_height =  Math.round(image_adjusted_scale.y * 70.0);
+        var true_width =  Math.round(image_adjusted_scale.x * 70.0);
 
         grid_item.style.gridColumn = "span " + true_width;
         grid_item.style.gridRow = "span " + true_height;
