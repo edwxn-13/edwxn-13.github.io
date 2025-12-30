@@ -1,76 +1,76 @@
 <html lang="en">
+
   <head>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="work.css" />
-  <script type="module" src = "/src/work/work.js"/>
+    <script type="module" src="/src/work/work.js" />
 
     <meta name="theme-color" content="#EEEEEE" />
     <title>edwin nwosu</title>
   </head>
 
-  <div class="homescreen">
-    <div class="content">
-      <div class="topBar">
-        <ul>
-          <a href = "../index.html">
-            <li><h1>edwin nwosu</h1></li>
-          </a>
-          <a href="index.html">
+  <body>
+    <div class="homescreen">
+      <div class="content">
+        <div class="topBar">
+          <ul>
+            <a href="">
+              <li>
+                <h1>edwin nwosu</h1>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <h1>work</h1>
+              </li>
+            </a>
+            <a href="https://github.com/edwxn-13">
+              <li>
+                <h1>github</h1>
+              </li>
+            </a>
+            <a href="../graphics">
+              <li>
+                <h1>graphic</h1>
+              </li>
+            </a>
             <li>
-              <h1>work</h1>
+              <h1><span id="currentTime"></span></h1>
             </li>
-          </a>
-          <a href="https://github.com/edwxn-13">
-            <li><h1>github</h1></li>
-          </a>
+            <li>
+              <h1><span id="resolution"></span></h1>
+            </li>
+            <script>
+              function getTheTime() {
+                const now = new Date();
+                const currentDateTime = now.toLocaleTimeString();
+                document.querySelector("#currentTime").textContent =
+                  currentDateTime;
+              }
 
-          <a href="../graphics/index.html">
-            <li><h1>graphic</h1></li>
-          </a>
-          <li>
-            <h1><span id="currentTime"></span></h1>
-          </li>
-          <li>
-            <h1><span id="resolution"></span></h1>
-          </li>
-          <script>
-            function getTheTime() {
-              const now = new Date();
-              const currentDateTime = now.toLocaleTimeString();
-              document.querySelector("#currentTime").textContent =
-                currentDateTime;
-            }
+              function getWindowSize() {
+                var w = window.innerWidth;
+                var h = window.innerHeight;
+                var sizeString = w.toString() + "x" + h.toString();
+                document.querySelector("#resolution").textContent = sizeString;
+              }
 
-            function getWindowSize() {
-              var w = window.innerWidth;
-              var h = window.innerHeight;
-              var sizeString = w.toString() + "x" + h.toString();
-              document.querySelector("#resolution").textContent = sizeString;
-            }
+              setInterval(getTheTime, 1000);
+              setInterval(getWindowSize, 50);
+            </script>
+          </ul>
 
-            setInterval(getTheTime, 1000);
-            setInterval(getWindowSize, 50);
-          </script>
-        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+
+      <div class="project-list" id="main-project-list">
 
       </div>
     </div>
 
-    
-  </div>
-
-  <div class="page">
-
-    <div class = "project-list" id = "main-project-list">
-     
-    </div>
-  </div>
-  
-</div>
-
+  </body>
 
 </html>
-
-
-
-
